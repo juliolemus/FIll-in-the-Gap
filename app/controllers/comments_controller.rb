@@ -15,6 +15,7 @@ class CommentsController < ApplicationController
   # GET /comments/new
   def new
     @comment = Comment.new
+    @post = Post.find(params[:post_id])
   end
 
   # GET /comments/1/edit
@@ -25,6 +26,7 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @comment = Comment.new(comment_params)
+    @post = Post.find(params[:post_id])
 
     respond_to do |format|
       if @comment.save
