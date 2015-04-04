@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   get 'users/new'
   get 'sessions/new'
 
@@ -6,7 +8,9 @@ Rails.application.routes.draw do
   get "log_in" => "sessions#new", :as => "log_in"
   get "sign_up" => "users#new", :as => "sign_up"
   get "post" => "posts#index", :as => "post"
-  root :to => "users#new"
+#  root :to => "users#new"
+  get "welcome" => "welcome#index", :as => "welcome"
+  root :to => "welcome#index"
   resources :users
   resources :sessions
 
