@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :uploads
+
+  resources :comments
+
   resources :posts do 
     resources :comments
   end
