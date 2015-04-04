@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 # compass and sass-rails
 gem 'sass-rails'
-gem 'compass-rails'
 # Semantic-UI
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass', branch: 'v1.0beta'
 gem 'pry'
