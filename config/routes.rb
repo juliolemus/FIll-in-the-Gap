@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   get "post" => "posts#index", :as => "post"
 #  root :to => "users#new"
   get "welcome" => "welcome#index", :as => "welcome"
+
   root :to => "welcome#index"
+
   resources :users
   resources :sessions
 
