@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'unirest'
 # compass and sass-rails
 gem 'sass-rails'
 # Semantic-UI
